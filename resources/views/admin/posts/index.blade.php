@@ -4,6 +4,7 @@
 
 <div class="container-fluid mt-4">
     <div class="row justify-content-between">
+        <a class="btn btn-primary my-2" href="{{ route("admin.posts.create") }}">Aggiungi</a>
         @foreach ($posts as $post)
             <div class="card p-0 mb-4" style="width: 18rem;">
                 <img class="card-img-top" src="{{ $post->image }}" alt="{{ $post->title }}">
